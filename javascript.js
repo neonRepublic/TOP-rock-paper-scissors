@@ -8,10 +8,14 @@ function getHumanChoice() {
     let humanChoice = prompt( "rock paper or scissors?" )
 
     if( humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors" ) {
+
         alert( "You chose " + humanChoice );
         return humanChoice;
+
     } else {
+
         alert( "Invalid Option" );
+
     };
 
 };
@@ -20,6 +24,7 @@ function getHumanChoice() {
 function getComputerChoice() {
 
     const computerChoice = [ "rock", "paper", "scissors" ];
+    
     return computerChoice[ Math.floor( Math.random() * 3 ) ];
 
 };
