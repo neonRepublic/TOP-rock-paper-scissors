@@ -1,20 +1,26 @@
+// Subproblem #3
+humanScore = 0;
+computerScore = 0;
+
 // Subproblem #1
+function getHumanScore() {
 
-/* let getHumanChoice = prompt("Rock Paper or Scissors?");
+    let humanChoice = prompt("Rock Paper or Scissors?")
 
-if (getHumanChoice.toLowerCase() === "Rock" ||  "Paper" || "Scissors") {
-    alert("You chose " + getHumanChoice); 
+    if(humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors") {
+        alert("You chose " + humanChoice);
+        return humanChoice;
+    } else {
+        alert("Invalid Option");
+    };
+
 };
-
-console.log(getHumanChoice); */
-
-
-
 
 // Subproblem #2
+function getComputerChoice() {
 
-function getComputerChoice(max) {
-    return Math.floor(Math.random() * max);
+    const computerChoice = ["Rock", "Paper", "Scissors"];
+    return computerChoice[Math.floor(Math.random() * 3)];
+
 };
 
-console.log(getComputerChoice(3));
