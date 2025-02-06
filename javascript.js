@@ -20,7 +20,7 @@ function getHumanChoice() {
 function getComputerChoice() {
 
     const computerChoice = [ "rock", "paper", "scissors" ];
-    return computerChoice[ Math.floor(Math.random() * 3 )];
+    return computerChoice[ Math.floor( Math.random() * 3 ) ];
 
 };
 
@@ -48,21 +48,43 @@ function playGame( rounds ) {
 
         ) {
 
-            alert("You Win!");
+            alert( "You Win!" );
             humanScore++;
 
         } else {
 
-            alert("You Lose!");
+            alert( "You Lose!" );
             computerScore++;
 
         };
 
         console.log( "You: " + humanScore + ", Computer: " + computerScore );
 
-        
+        if ( rounds > 1 ) {
+
+            playGame( rounds - 1 );
+
+        } else {
+
+            alert( "Game Over!" )
+
+        };
+
+        if ( humanScore > computerScore ) {
+
+            alert( "You Win the Game!" );
+
+        } else {
+
+            alert("Game Over!");
+
+        };
 
     }; 
 
+    playRound();
+
 };
+
+playGame(5);
 

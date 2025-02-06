@@ -13,7 +13,7 @@ Prompt asks user for Rock, Paper, or Scissors.
 
 Subproblem #2
 
-Once user selects, the computer randomly picks a choice.
+Computer randomly picks a choice.
 
 Subproblem #3
 
